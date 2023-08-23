@@ -1,0 +1,62 @@
+@charset "UTF-8";
+/*Variables con paleta de colores diseño*/
+/*Gradients*/
+/*Circulo*/
+/* Neutral*/
+.component {
+  background-color: hsl(0, 0%, 100%);
+}
+.component .resultado {
+  background-color: hsl(256, 72%, 46%);
+  border-radius: 0.8rem;
+  color: white;
+  -webkit-border-radius: 0.8rem;
+  -moz-border-radius: 0.8rem;
+  -ms-border-radius: 0.8rem;
+  -o-border-radius: 0.8rem;
+}
+.component .sumario .notas {
+  border-radius: 0.28rem;
+  -webkit-border-radius: 0.28rem;
+  -moz-border-radius: 0.28rem;
+  -ms-border-radius: 0.28rem;
+  -o-border-radius: 0.28rem;
+}
+.component .sumario .notas span b {
+  color: hsl(224, 30%, 27%);
+}
+.component #reaccion {
+  background-color: hsl(0, 100%, 67%);
+}
+.component #reaccion .textresultado {
+  color: hsl(0, 100%, 67%);
+}
+.component #memoria {
+  background-color: hsl(39, 100%, 56%);
+}
+.component #memoria .textresultado {
+  color: hsl(39, 100%, 56%);
+}
+.component #verbal {
+  background-color: hsl(166, 100%, 37%);
+}
+.component #verbal .textresultado {
+  color: hsl(166, 100%, 37%);
+}
+.component #visual {
+  background-color: hsl(234, 85%, 45%);
+}
+.component #visual .textresultado {
+  color: hsl(234, 85%, 45%);
+}
+.component button {
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+  background-color: hsl(224, 30%, 27%);
+  border: none;
+}
+
+/*# sourceMappingURL=summary-component.css.map */

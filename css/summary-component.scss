@@ -1,0 +1,92 @@
+/*Variables con paleta de colores diseño*/
+$light-red: hsl(0, 100%, 67%);
+$Orangey-yellow: hsl(39, 100%, 56%);
+$Green-teal: hsl(166, 100%, 37%);
+$Cobalt-blue: hsl(234, 85%, 45%);
+
+/*Gradients*/
+$Light-slate-blue : hsl(252, 100%, 67%);
+$Light-royal-blue : hsl(241, 81%, 54%);
+/*Circulo*/
+$Violet-blue: hsla(256, 72%, 46%, 1);
+$Persian-blue: hsla(241, 72%, 46%, 0);
+
+/* Neutral*/
+$White: hsl(0, 0%, 100%);
+$Pale-blue: hsl(221, 100%, 96%);
+$Light-lavender: hsl(241, 100%, 89%);
+$Dark-gray-blue: hsl(224, 30%, 27%);
+
+
+
+.component{
+  background-color: $White;
+    .resultado{
+    background-color:  $Violet-blue;
+    border-radius: 0.8rem;
+    color: white;
+    -webkit-border-radius: 0.8rem;
+    -moz-border-radius: 0.8rem;
+    -ms-border-radius: 0.8rem;
+    -o-border-radius: 0.8rem;
+}
+  .sumario
+  .notas{
+    border-radius: 0.28rem;
+    -webkit-border-radius: 0.28rem;
+    -moz-border-radius: 0.28rem;
+    -ms-border-radius: 0.28rem;
+    -o-border-radius: 0.28rem;
+    span{
+      b{
+        color: $Dark-gray-blue;  
+      }
+    }  
+     }
+     
+    #reaccion{
+      background-color: $light-red ;
+    //  opacity: 0.5;
+     
+      //position: absolute;
+      .textresultado{
+        color: $light-red;
+      //  position: relative;
+       // z-index: 1;
+       
+      }
+     
+    }
+     #memoria{
+      background-color: $Orangey-yellow ;
+      
+      .textresultado{
+        color: $Orangey-yellow ;
+      }
+     }
+     #verbal{
+      background-color: $Green-teal ;
+      
+      .textresultado{
+        color: $Green-teal;
+      }
+     }
+     #visual{
+      background-color: $Cobalt-blue;
+   
+      .textresultado{
+        color: $Cobalt-blue;
+      }
+  }
+    
+       button{
+        border-radius: 2rem;
+        -webkit-border-radius: 2rem;
+        -moz-border-radius: 2rem;
+        -ms-border-radius: 2rem;
+        -o-border-radius: 2rem;
+        background-color: $Dark-gray-blue;
+        border: none;
+}
+  }
+
