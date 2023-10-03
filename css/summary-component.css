@@ -3,53 +3,148 @@
 /*Gradients*/
 /*Circulo*/
 /* Neutral*/
-.component {
-  background-color: hsl(0, 0%, 100%);
+/*Fondos ocapos*/
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
-.component .resultado {
-  background-color: hsl(256, 72%, 46%);
+
+.componente {
+  background-color: white;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+.cabecera {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+#yres {
+  color: grey;
+}
+
+.resultado {
+  background: linear-gradient(180deg, hsl(256, 72%, 46%) 61%, hsl(241, 72%, 46%) 100%);
   border-radius: 0.8rem;
   color: white;
   -webkit-border-radius: 0.8rem;
   -moz-border-radius: 0.8rem;
   -ms-border-radius: 0.8rem;
   -o-border-radius: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding: 1.5rem;
 }
-.component .sumario .notas {
+.resultado #circulo {
+  align-content: center;
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  background: linear-gradient(180deg, hsl(241, 72%, 46%) 61%, hsl(256, 72%, 46%) 100%);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: stretch;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.resultado #circulo .texto-resul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.resultado #circulo .texto-resul #res {
+  font-size: 4rem;
+  font-weight: 800;
+}
+.resultado #circulo .texto-resul #hundred {
+  color: grey;
+  margin-top: -13px;
+}
+.resultado .parraf #word-res {
+  font-size: 30px;
+  font-weight: 700;
+}
+.resultado .parraf #parrafo {
+  color: gray;
+  font-size: 18px;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.sumario {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 0 0.8rem 0.8rem;
+  box-shadow: 2rem 0 2rem rgba(128, 128, 128, 0.301);
+  -webkit-border-radius: 0 0.8rem 0.8rem;
+  -moz-border-radius: 0 0.8rem 0.8rem;
+  -ms-border-radius: 0 0.8rem 0.8rem;
+  -o-border-radius: 0 0.8rem 0.8rem;
+}
+.sumario .notas {
   border-radius: 0.28rem;
   -webkit-border-radius: 0.28rem;
   -moz-border-radius: 0.28rem;
   -ms-border-radius: 0.28rem;
   -o-border-radius: 0.28rem;
 }
-.component .sumario .notas span b {
-  color: hsl(224, 30%, 27%);
+.sumario .notas .row {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin: 0.8rem auto 0.8rem auto;
 }
-.component #reaccion {
-  background-color: hsl(0, 100%, 67%);
+.sumario .notas span b {
+  color: black;
 }
-.component #reaccion .textresultado {
-  color: hsl(0, 100%, 67%);
+.sumario #reaccion {
+  background-color: rgba(255, 87, 87, 0.068);
 }
-.component #memoria {
-  background-color: hsl(39, 100%, 56%);
+.sumario #reaccion #cien {
+  color: gray;
 }
-.component #memoria .textresultado {
-  color: hsl(39, 100%, 56%);
+.sumario #reaccion .textresultado {
+  color: #ff5757;
 }
-.component #verbal {
-  background-color: hsl(166, 100%, 37%);
+.sumario #memoria {
+  background-color: rgba(255, 177, 31, 0.068);
 }
-.component #verbal .textresultado {
-  color: hsl(166, 100%, 37%);
+.sumario #memoria #cien {
+  color: gray;
 }
-.component #visual {
-  background-color: hsl(234, 85%, 45%);
+.sumario #memoria .textresultado {
+  color: #ffb01f;
 }
-.component #visual .textresultado {
-  color: hsl(234, 85%, 45%);
+.sumario #verbal {
+  background-color: rgba(0, 189, 145, 0.068);
 }
-.component button {
+.sumario #verbal #cien {
+  color: gray;
+}
+.sumario #verbal .textresultado {
+  color: #00bd91;
+}
+.sumario #visual {
+  background-color: rgba(17, 37, 212, 0.068);
+}
+.sumario #visual #cien {
+  color: gray;
+}
+.sumario #visual .textresultado {
+  color: #1125d4;
+}
+.sumario .boton .bn {
+  display: flex;
+  justify-content: center;
+}
+.sumario .boton button {
   border-radius: 2rem;
   -webkit-border-radius: 2rem;
   -moz-border-radius: 2rem;
@@ -57,6 +152,31 @@
   -o-border-radius: 2rem;
   background-color: hsl(224, 30%, 27%);
   border: none;
+  height: 38px;
+  width: 100%;
+  color: white;
+}
+.sumario .boton button:hover {
+  background-color: hsl(241, 72%, 46%);
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  body {
+    display: block;
+  }
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  body {
+    display: block;
+  }
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=summary-component.css.map */

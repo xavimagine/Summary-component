@@ -1,15 +1,15 @@
 /*Variables con paleta de colores diseño*/
-$light-red: hsl(0, 100%, 67%);
-$Orangey-yellow: hsl(39, 100%, 56%);
-$Green-teal: hsl(166, 100%, 37%);
-$Cobalt-blue: hsl(234, 85%, 45%);
+$light-red: #ff5757;
+$Orangey-yellow: #ffb01f;
+$Green-teal: #00bd91;
+$Cobalt-blue: #1125d4;
 
 /*Gradients*/
 $Light-slate-blue : hsl(252, 100%, 67%);
 $Light-royal-blue : hsl(241, 81%, 54%);
 /*Circulo*/
 $Violet-blue: hsla(256, 72%, 46%, 1);
-$Persian-blue: hsla(241, 72%, 46%, 0);
+$Persian-blue: hsl(241, 72%, 46%);
 
 /* Neutral*/
 $White: hsl(0, 0%, 100%);
@@ -17,69 +17,160 @@ $Pale-blue: hsl(221, 100%, 96%);
 $Light-lavender: hsl(241, 100%, 89%);
 $Dark-gray-blue: hsl(224, 30%, 27%);
 
+/*Fondos ocapos*/
+$bg-red: rgba(255, 87, 87, 0.068);
+$bg-Orangey: rgba(255, 177, 31, 0.068);
+$bg-Green: rgb(0, 189, 145, 0.068);
+$bg-Cobalt: rgb(17, 37, 212, 0.068);
 
+@mixin cien{
+  #cien{
+    color: gray;
+  }
+}
 
-.component{
-  background-color: $White;
-    .resultado{
-    background-color:  $Violet-blue;
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.componente{
+  background-color: white;
+  font-family: 'Hanken Grotesk', sans-serif;
+
+} 
+
+.cabecera{
+  font-weight: 600;
+    font-size: 18px;
+}
+#yres{
+  color: grey;
+}
+.resultado{
+    background: linear-gradient(180deg,$Violet-blue 61%, $Persian-blue  100%); 
     border-radius: 0.8rem;
     color: white;
     -webkit-border-radius: 0.8rem;
     -moz-border-radius: 0.8rem;
     -ms-border-radius: 0.8rem;
     -o-border-radius: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 1.5rem;
+      #circulo{
+      align-content: center;
+      width: 12rem; 
+      height: 12rem; 
+      border-radius: 50%; 
+      background: linear-gradient(180deg,$Persian-blue 61%, $Violet-blue 100%);
+      display:flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-content: center;
+      justify-content: center;
+      align-items: stretch;
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+      .texto-resul{    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        #res{
+          font-size: 4rem;
+          font-weight: 800;
+        }
+        #hundred{
+          color: grey;
+          margin-top: -13px;
+        }
+      }
+    }
+    .parraf{
+      #word-res{
+        font-size: 30px;
+        font-weight: 700;
+      }
+      #parrafo{
+        color:gray;
+        font-size: 18px;
+        margin-left: 10px;
+        margin-right: 10px;
+        text-align: center;
+      }
+    }
 }
-  .sumario
+
+  .sumario{
+    background-color: white;
+    padding: 1.5rem;
+    border-radius:0 0.8rem  0.8rem;
+    box-shadow: 2rem 0 2rem rgba(128, 128, 128, 0.301);
+    -webkit-border-radius:0 0.8rem 0.8rem;
+    -moz-border-radius:0 0.8rem 0.8rem;
+    -ms-border-radius:0 0.8rem 0.8rem;
+    -o-border-radius:0 0.8rem 0.8rem;
+
+
   .notas{
     border-radius: 0.28rem;
     -webkit-border-radius: 0.28rem;
     -moz-border-radius: 0.28rem;
     -ms-border-radius: 0.28rem;
     -o-border-radius: 0.28rem;
+
+    .row{
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      margin: 0.8rem  auto 0.8rem auto;
+    }
+    
     span{
+      
       b{
-        color: $Dark-gray-blue;  
+        color: black;  
       }
     }  
-     }
-     
-    #reaccion{
-      background-color: $light-red ;
-    //  opacity: 0.5;
-     
-      //position: absolute;
-      .textresultado{
-        color: $light-red;
-      //  position: relative;
-       // z-index: 1;
-       
-      }
-     
-    }
-     #memoria{
-      background-color: $Orangey-yellow ;
-      
-      .textresultado{
-        color: $Orangey-yellow ;
-      }
-     }
-     #verbal{
-      background-color: $Green-teal ;
-      
-      .textresultado{
-        color: $Green-teal;
-      }
-     }
-     #visual{
-      background-color: $Cobalt-blue;
-   
-      .textresultado{
-        color: $Cobalt-blue;
-      }
-  }
     
-       button{
+  }
+  #reaccion{
+    background-color: $bg-red ;
+    @include cien;
+    .textresultado{
+      color: $light-red;
+    } 
+  }
+  #memoria{
+    background-color: $bg-Orangey ;
+    @include cien;
+    .textresultado{
+      color: $Orangey-yellow ;
+    }
+  }
+  #verbal{
+    background-color: $bg-Green ;
+    @include cien;
+    .textresultado{
+      color: $Green-teal;
+      
+    }
+  }
+  #visual{
+    background-color: $bg-Cobalt;
+  @include cien;    
+    .textresultado{
+      color: $Cobalt-blue;
+    }
+  }
+  .boton{
+    .bn{
+      display: flex;
+      justify-content: center;
+    }
+      button{
         border-radius: 2rem;
         -webkit-border-radius: 2rem;
         -moz-border-radius: 2rem;
@@ -87,6 +178,36 @@ $Dark-gray-blue: hsl(224, 30%, 27%);
         -o-border-radius: 2rem;
         background-color: $Dark-gray-blue;
         border: none;
-}
+        height: 38px;
+        width: 100%;
+        color: white;
+        &:hover{
+          background-color: $Persian-blue;
+        }
+      } 
   }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  body{
+    display: block;
+  }
+.row{
+  display: flex;
+  flex-direction: column;
+}
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  body{
+    display: block;
+  }
+  .row{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+
 
