@@ -107,7 +107,7 @@ body {
 .sumario #reaccion {
   background-color: rgba(255, 87, 87, 0.068);
 }
-.sumario #reaccion #cien {
+.sumario #reaccion .cien {
   color: gray;
 }
 .sumario #reaccion .textresultado {
@@ -116,7 +116,7 @@ body {
 .sumario #memoria {
   background-color: rgba(255, 177, 31, 0.068);
 }
-.sumario #memoria #cien {
+.sumario #memoria .cien {
   color: gray;
 }
 .sumario #memoria .textresultado {
@@ -125,7 +125,7 @@ body {
 .sumario #verbal {
   background-color: rgba(0, 189, 145, 0.068);
 }
-.sumario #verbal #cien {
+.sumario #verbal .cien {
   color: gray;
 }
 .sumario #verbal .textresultado {
@@ -134,7 +134,7 @@ body {
 .sumario #visual {
   background-color: rgba(17, 37, 212, 0.068);
 }
-.sumario #visual #cien {
+.sumario #visual .cien {
   color: gray;
 }
 .sumario #visual .textresultado {
